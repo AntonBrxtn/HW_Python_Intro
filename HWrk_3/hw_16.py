@@ -9,7 +9,7 @@
 
 n = int(input('Введите количество элементов массива А: '))
 import random
-a = [random.randint(0, 10) for i in range(n)]
-print(a)
+lst = [random.randint(0, 10) for i in range(n)]
+print(lst)
 x = int(input('Введите число Х: '))
-print ('В массиве А число Х встречается', a.count(x), 'раз') 
+print ('В массиве А число Х встречается', lst.count(x), 'раз') 
