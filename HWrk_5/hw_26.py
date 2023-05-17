@@ -4,14 +4,11 @@
 #     A = 2; B = 3 -> 8 
 
 def degree (a, b):
-    i = 0
     if b == 0:
         return 1
-    elif b == 1:
+    if b == 1:
         return a
-    else:
-        i += 1
-        return a * degree(a, b - i)
+    return a * degree(a, b - 1)
     
 a = int(input('Введите число: '))
 b = int(input('Введите степень, в которую будем возводить число: '))
